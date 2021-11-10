@@ -345,7 +345,7 @@
     align-items: center;
 }
 
-.buttonpay button {
+.buttonpay a {
     padding: 10px 30px;
     border-radius: 99999px;
     outline: none;
