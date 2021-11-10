@@ -12,7 +12,8 @@ const pricePara = document.querySelector(".price"),
     circle = document.querySelector(".blackcircle"),
     progress = document.querySelector(".progress"),
     line = document.querySelector(".line"),
-    Rs = document.getElementById("Rs");
+    Rs = document.getElementById("Rs"),
+    payLink = document.getElementById("paylink");
 
 let prevActiveOption = option1;
 var circleMouseDown = false;
@@ -79,5 +80,14 @@ function changeBorders(IdName) {
             : pfor325;
     hidePara.style.display = "none";
     displayPara.style.display = "block";
+    if(displayPara === pfor125) {
+        payLink.setAttribute("href", "https://rzp.io/l/KRB2cNa");
+    }
+    else if(displayPara === pfor225) {
+        payLink.setAttribute("href", "https://rzp.io/l/DV46cEahDO");
+    }
+    else {
+        payLink.setAttribute("href", "https://rzp.io/l/yvwygwyrVd");
+    }
     prevActiveOption = shouldbeActive;
 }
