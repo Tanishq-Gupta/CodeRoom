@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tutor's Profile</title>
+        <link rel="stylesheet" href="./tutorPage.css" />
+        <script src="./tutorPage.js" defer></script>
+    </head>
+    <body>
+        <div class="nav-bar"></div>
+        <div class="container">
+            <div class="banner">
+                <div class="background"></div>
+                <div class="links">
+                    <div class="social">
+                        <a href="#">
+                            <img
+                                src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-linkedin-3.png"
+                                alt="linkedin"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="https://apprecs.org/gp/images/app-icons/300/0b/com.SoftTechs.CodeForces.jpg"
+                                alt="codeforces"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="https://yt3.ggpht.com/vDx6SI8Idlp0RFkO-_aoukC7M6JUBu5xxBxRGGInmzw1hqIfcLYIKUvZKYRAAoNob7drkULmrA=s900-c-k-c0x00ffffff-no-rj"
+                                alt="Codechef"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="imageContainer">
+                <div class="circle">
+                    <img
+                        src="https://media-exp1.licdn.com/dms/image/C4E03AQEvyYtYt20cvw/profile-displayphoto-shrink_800_800/0/1626696153289?e=1637798400&v=beta&t=rL-tIbOXiR7jPlwlXULe0BtKF65CAA_dFyGShbSj9Ig"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="infoContainer">
+                <p class="name">tanishq_code_c</p>
+                <p class="passion">Competitive Programmer</p>
+            </div>
+            <div class="cards">
+                <div class="cards-navigator">
+                    <div class="icons-container">
+                        <div class="info-button" onclick="showInfo()">
+                            <svg
+                                class="info-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="class-button" onclick="showPrice()">
+                            <img
+                                class="class-icon"
+                                src="https://img.icons8.com/ios-filled/50/000000/c.png"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="main-content">
+                        <h1 class="heading">About me</h1>
+                        <p class="tutor-p">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Corrupti, ea laborum neque facere quaerat at
+                            omnis minima nisi dolores voluptatum maxime,
+                            consectetur eos ipsam magnam quidem fuga. Ullam,
+                            minima debitis? Numquam molestiae ex incidunt
+                            consequuntur inventore sed facilis blanditiis
+                            reprehenderit ipsum esse quam iusto, optio, quaerat
+                            molestias doloremque. Dignissimos ipsam quidem
+                            ducimus fugit? Rem facere rerum vitae voluptas
+                            ducimus deserunt. Dolorum minus iusto, dolores
+                            provident totam maxime dolor doloribus veritatis?
+                            Vel, doloribus? Dolore veniam assumenda adipisci
+                            nihil excepturi non nulla eaque! Harum atque
+                        </p>
+                        <p class="price">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Recusandae qui dolores consequatur cupiditate,
+                            dignissimos placeat sit praesentium accusamus, sunt
+                            quos repudiandae? Adipisci placeat odit cupiditate
+                            architecto nesciunt? Asperiores, dicta facere? Nobis
+                            eaque, assumenda dolor odit explicabo neque ad
+                            inventore ea? Dignissimos ipsum laboriosam aperiam
+                            blanditiis iure non optio accusantium. Optio
+                            voluptates officiis animi accusantium consequatur
+                            numquam sed enim consequuntur! Ducimus. Ut earum
+                            asperiores ipsam corrupti hic enim ullam repellendus
+                            sed impedit, blanditiis dolorem aliquid quae aliquam
+                            laborum odit quod magnam, ipsum vitae obcaecati
+                            maiores. Voluptatibus amet deleniti voluptates
+                            laudantium nobis. Voluptate consequuntur iure
+                            quaerat
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mcontainer">
+                <div class="cheer">
+                    <h1>Like My Classes ?</h1>
+                    <div class="progressbar">
+                        <div class="progress"></div>
+                        <div class="rupees">
+                            <p id="Rs">0 Rs</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="blackcircle"></div>
+                    </div>
+                    <div class="messageandbutton">
+                        <div class="message">
+                            <textarea
+                                placeholder="Enter your text here"
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                        </div>
+                        <div class="buttonpay">
+                            <button type="submit">You Rock</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book">
+                    <p>Book a Coding Hour</p>
+                    <div class="last">
+                        <div class="payment">
+                            <div
+                                class="option active"
+                                id="option1"
+                                onclick="changeBorders(this.getAttribute('id'))"
+                            >
+                                <p>125 Rs</p>
+                            </div>
+                            <div
+                                class="option"
+                                id="option2"
+                                onclick="changeBorders(this.getAttribute('id'))"
+                            >
+                                <p>225 Rs</p>
+                            </div>
+                            <div
+                                class="option"
+                                id="option3"
+                                onclick="changeBorders(this.getAttribute('id'))"
+                            >
+                                <p>325 Rs</p>
+                            </div>
+                        </div>
+                        <div class="aboutclass">
+                            <p class="pfor125">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Esse minus recusandae ipsam
+                                asperiores laborum quo commodi accusantium
+                                blanditiis voluptatum. Voluptates dicta soluta
+                                veniam aut illo ex esse quidem. Earum,
+                                aspernatur. Et eaque saepe mollitia facere aut
+                                quos voluptatum praesentium earum corporis harum
+                                ipsam distinctio quo officiis explicabo
+                                voluptatem quasi, rerum, reprehenderit quaerat
+                                maxime soluta odit eos repellendus! Nisi, iusto
+                                earum? Quibusdam accusantium quod nobis ipsum
+                                impedit porro tempora, eos blanditiis omnis
+                                laudantium quae in distinctio illo culpa labore
+                                cumque, repellendus architecto ex qui mollitia.
+                                Ullam veritatis omnis labore a exercitationem.
+                                Delectus quasi deleniti modi fugit doloribus
+                                labore beatae aliquam debitis commodi et
+                                excepturi
+                            </p>
+                            <p class="pfor225">
+                                minus recusandae ipsam asperiores laborum quo
+                                commodi accusantium blanditiis voluptatum.
+                                Voluptates dicta soluta veniam aut illo ex esse
+                                quidem. Earum, aspernatur. Et eaque saepe
+                                mollitia facere aut quos voluptatum praesentium
+                                earum corporis harum ipsam distinctio quo
+                                officiis explicabo voluptatem quasi, rerum,
+                                reprehenderit quaerat maxime soluta odit eos
+                                repellendus! Nisi, iusto earum? Quibusdam
+                                accusantium quod nobis ipsum impedit porro
+                                tempora, eos blanditiis omnis laudantium quae in
+                                distinctio illo culpa labore cumque, repellendus
+                                architecto ex qui mollitia. Ullam veritatis
+                                omnis labore a exercitationem. Delectus quasi
+                                deleniti modi fugit doloribus labore beatae
+                                aliquam debitis commodi et excepturi
+                            </p>
+                            <p class="pfor325">
+                                accusantium blanditiis voluptatum. Voluptates
+                                dicta soluta veniam aut illo ex esse quidem.
+                                Earum, aspernatur. Et eaque saepe mollitia
+                                facere aut quos voluptatum praesentium earum
+                                corporis harum ipsam distinctio quo officiis
+                                explicabo voluptatem quasi, rerum, reprehenderit
+                                quaerat maxime soluta odit eos repellendus!
+                                Nisi, iusto earum? Quibusdam accusantium quod
+                                nobis ipsum impedit porro tempora, eos
+                                blanditiis omnis laudantium quae in distinctio
+                                illo culpa labore cumque, repellendus architecto
+                                ex qui mollitia. Ullam veritatis omnis labore a
+                                exercitationem. Delectus quasi deleniti modi
+                                fugit doloribus labore beatae aliquam debitis
+                                commodi et excepturi
+                            </p>
+                            <div class="paybutton">
+                                <a href="https://rzp.io/l/BzHx8ywl">Pay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

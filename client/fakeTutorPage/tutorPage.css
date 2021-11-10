@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.nav-bar {
+    background-color: black;
+    height: 60px;
+}
+
+.container {
+    width: 98%;
+    /* height: 2000px; */
+    height: 1500px;
+    margin: 0px auto;
+}
+
+.container .banner {
+    width: 100%;
+    height: 600px;
+}
+
+.container .banner .background {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/20/14/37/eat-2661935_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 94%;
+}
+
+.container .banner .links {
+    height: 6%;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
+    border-top: 0;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.container .banner .links .social {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .banner .links img {
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 50%;
+}
+
+.container .imageContainer {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container .imageContainer .circle {
+    width: 17%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: -10%;
+}
+
+.container .imageContainer .circle img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.container .infoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-left: 3%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .infoContainer p:first-of-type {
+    font-weight: 700;
+    font-size: 2vw;
+    color: rgb(53, 52, 52);
+}
+
+.container .infoContainer p:last-of-type {
+    font-weight: 200;
+    font-size: 1vw;
+    color: gray;
+    margin-bottom: 100px;
+}
+
+.cards {
+    width: 50%;
+    height: 300px;
+    float: right;
+    margin-top: -15%;
+    border-radius: 15px;
+    display: flex;
+    margin-right: 10%;
+    border: 1px solid black;
+}
+
+.cards .cards-navigator {
+    width: 7%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.cards .content {
+    width: 93%;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .cards-navigator .icons-container {
+    height: 100%;
+    width: 100%;
+}
+
+.cards .cards-navigator .icons-container .info-button {
+    height: 70%;
+    width: 100%;
+    border-radius: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px #ccc;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.cards .cards-navigator .icons-container .class-button {
+    height: 30%;
+    width: 100%;
+    border-radius: 0 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #ccc;
+    transition: 1s;
+}
+
+.cards .cards-navigator .icons-container .info-icon {
+    width: 50%;
+}
+
+.cards .cards-navigator .icons-container .class-icon {
+    width: 47%;
+}
+
+.cards .content .main-content {
+    width: 80%;
+    height: 80%;
+    overflow-x: auto;
+    color: gray;
+    text-align: justify;
+}
+
+.cards .content .main-content h1 {
+    margin-bottom: 20px;
+}
+
+.cards .content .main-content .price {
+    display: none;
+}
+
+.mcontainer {
+    margin-top: 60px;
+    height: 500px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mcontainer .cheer {
+    height: 90%;
+    width: 40%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.mcontainer .book {
+    width: 55.5%;
+    height: 90%;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: gray;
+}
+
+.mcontainer .book p {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mcontainer .book .last {
+    width: 90%;
+    height: 60%;
+    box-shadow: 3px 3px 10px #ccc;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-radius: 15px;
+}
+
+.mcontainer .book .payment {
+    width: 15%;
+    height: 100%;
+}
+.mcontainer .book .payment div {
+    height: 33.33%;
+    width: 100%;
+}
+.mcontainer .book .payment div:first-of-type {
+    border-radius: 15px 0 0 0px;
+}
+.mcontainer .book .payment div:last-of-type {
+    border-radius: 0 0 0 15px;
+}
+.mcontainer .book .payment .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.mcontainer .book .payment .option.active {
+    border-style: groove;
+    border-right: 0;
+    box-shadow: 0px 0px 0px #ccc;
+}
+
+.mcontainer .book .payment .option p {
+    font-size: 20px;
+}
+.mcontainer .book .aboutclass {
+    height: 100%;
+    width: 85%;
+}
+.mcontainer .book .aboutclass .paybutton {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mcontainer .book .aboutclass .paybutton a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1.6% 7%;
+    border-radius: 99999px;
+}
+
+.mcontainer .book .aboutclass p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    height: 64%;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.cheer .progressbar {
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    border-radius: 9999px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.cheer .progressbar .rupees {
+    margin-top: -5%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cheer .progressbar .rupees p {
+    color: gray;
+}
+
+.cheer .progressbar .progress {
+    width: 0px;
+    height: 100%;
+    background-color: black;
+    border-radius: 9999px 0px 0px 9999px;
+}
+
+.cheer h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.messageandbutton {
+    width: 80%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    display: flex;
+}
+
+.cheer .message {
+    width: 50%;
+    height: 100%;
+}
+
+.cheer textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.buttonpay {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonpay button {
+    padding: 10px 30px;
+    border-radius: 99999px;
+    outline: none;
+    text-decoration: none;
+    border: 0px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cheer .line {
+    height: 2px;
+    width: 80%;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    position: relative;
+}
+
+.cheer .line .blackcircle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: -2%;
+    background-color: black;
+    position: absolute;
+    top: -8px;
+    cursor: pointer;
+}
+
+.mcontainer .book .aboutclass .pfor225,
+.pfor325 {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .container .banner {
+        aspect-ratio: 190/100;
+        height: auto;
+    }
+    .container .banner .links .social {
+        width: 20%;
+    }
+    .cards {
+        margin-top: 0;
+        width: 80%;
+    }
+}
