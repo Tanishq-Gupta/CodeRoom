@@ -11,6 +11,8 @@ const {
     removeUserById,
 } = require("./utils/usersHandler");
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.static(path.join(__dirname, "client")));
 
 io.on("connection", (socket) => {
@@ -58,6 +60,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(3000, () => {
-    console.log("listening on port 3000...");
+server.listen(PORT, () => {
+    console.log(`listening on port ${PORT}...`);
 });
